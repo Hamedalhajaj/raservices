@@ -53,15 +53,9 @@ const Header = React.forwardRef((props, ref) => {
             <li onClick={() => handleCategoryClick('hvac')}>HVAC</li>
           </ul>
         </div>
-        <a href={() => false} onClick={() => handleNoneSpecialityClick('portfolio')}>
-          Portfolio
-        </a>
-        <a href={() => false} onClick={() => handleNoneSpecialityClick('whoweare')}>
-          Who we are
-        </a>
-        <a href={() => false} onClick={() => handleNoneSpecialityClick('contact')}>
-          Contact
-        </a>
+        <div onClick={() => handleNoneSpecialityClick('portfolio')}>Portfolio</div>
+        <div onClick={() => handleNoneSpecialityClick('whoweare')}>Who we are</div>
+        <div onClick={() => handleNoneSpecialityClick('contact')}>Contact</div>
       </nav>
     </div>
   );

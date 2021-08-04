@@ -237,7 +237,7 @@ body {
   border-bottom: none;
 }
 
-.navItemsContainer a,
+.navItemsContainer div,
 .specialitiesMenue {
   font-size: 15px;
   color: #f3f3f3;
