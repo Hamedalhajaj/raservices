@@ -1,13 +1,270 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: system-ui;
+}
+.fourImagesContainerRef {
+  display: flex;
+  height: 100vh;
+}
+
+.imageCardContainer,
+.specialitiesLanginImage {
+  position: relative;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.imageCardContainer h3 {
+  color: #fbfbfb;
+  text-decoration: none;
+  position: absolute;
+  bottom: 12%;
+  left: 4%;
+  border-bottom: 4px solid #a52024;
+}
+.specialitiesLanginImageContainer h1 {
+  font-size: 72px;
+  color: #fbfbfb;
+  text-decoration: none;
+  position: absolute;
+  bottom: 51%;
+  left: 3%;
+  margin-bottom: 1%;
+}
+
+.specialitiesLanginImage {
+  width: 100vw;
+  height: 100vh;
+}
+.specialitiesLanginImageContainer .bottomBorder {
+  width: 10vw;
+  position: absolute;
+  border-bottom: 8px solid #a52024;
+  bottom: 50%;
+  left: 3%;
+}
+.specialitiesLanginImageContainer .arrowDiv img {
+  width: 4%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  animation-name: arrowAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrowAnimation {
+  25% {
+    bottom: 1%;
+    left: 50%;
+  }
+  50% {
+    bottom: 5%;
+    left: 50%;
+  }
+  75% {
+    bottom: 1%;
+    left: 50%;
+  }
+  100% {
+    bottom: 5%;
+    left: 50%;
+  }
+}
+
+.imageCardContainer div {
+  display: none;
+  color: #fbfbfb;
+  text-decoration: none;
+  position: absolute;
+  bottom: 10%;
+  left: 4%;
+  font-size: small;
+  font-weight: bold;
+  animation-name: appear;
+  animation-duration: 2s;
+  background: #00000085;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.navBarContainer,
+.headerAnimationReverted {
+  background: #00000059;
+}
+
+.navBarContainer,
+.headerAnimation,
+.headerAnimationReverted {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+}
+
+.headerAnimation {
+  animation-name: header;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.headerAnimationReverted {
+  animation-name: headerrevert;
+  animation-duration: 1s;
+}
+
+@keyframes header {
+  from {
+    background: #00000059;
+  }
+  to {
+    background: #fbfbfb;
+  }
+}
+
+@keyframes headerrevert {
+  from {
+    background: #fbfbfb;
+  }
+  to {
+    background: #00000059;
+  }
+}
+
+.imageCard {
+  width: 33.33333vw;
+  height: 100%;
+}
+
+.imageCard:hover {
+  width: 40vw;
+  animation-name: anime;
+  animation-duration: 1s;
+}
+.imageCard:not(:hover) {
+  width: 33.33333vw;
+  animation-name: out;
+  animation-duration: 1s;
+}
+@keyframes anime {
+  from {
+    width: 33.33333vw;
+  }
+  to {
+    width: 40vw;
+  }
+}
+@keyframes out {
+  from {
+    width: 40vw;
+  }
+  to {
+    width: 33.33333vw;
+  }
+}
+
+.logo {
+  flex: 1;
+  color: #f3f3f3;
+  margin-left: 3%;
+}
+
+.logoAnimation,
+.logoAnimationReverted,
+.headerLogo {
+  padding: 1%;
+  cursor: pointer;
+}
+
+.logoAnimation {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.logoAnimationReverted {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+.headerLogo,
+.logoAnimationReverted {
+  width: 5%;
+}
+
+.logoAnimation {
+  width: 5%;
+}
+
+.navItemsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  align-self: center;
+  align-items: center;
+  height: 6vh;
+}
+
+.navItemsContainer ul {
+  visibility: hidden;
+  position: absolute;
+  background-color: #f3f3f3;
+  padding: 18px;
+  min-width: max-content;
+  border-radius: 2px;
+}
+
+.navItemsContainer li {
+  color: #525252;
+  list-style-type: none;
+  padding: 3%;
+  width: max-content;
+  border-bottom: 0.5px solid #525252;
+}
+
+.navItemsContainer li:last-child {
+  border-bottom: none;
+}
+
+.navItemsContainer a,
+.specialitiesMenue {
+  font-size: 15px;
+  color: #f3f3f3;
+  text-decoration: none;
+  height: max-content;
+  transition: border-bottom 0.1s;
+}
+
+.specialitiesMenue {
+  font-weight: 500;
+}
+.navItemsContainer a:visited {
+  color: #f3f3f3;
+}
+
+.navItemsContainer a:hover,
+.specialitiesMenue:hover {
+  border-bottom: 1px solid #a52024;
+}
+
+.imageCardContainer a:visited {
+  color: #a52024;
+}
+
+.contactinfo {
+  position: absolute;
+  bottom: 12%;
+  left: 34%;
+  color: #f3f3f3;
 }
