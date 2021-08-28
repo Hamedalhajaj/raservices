@@ -1,21 +1,25 @@
 {
-  "homepage": "https://thepinkhatdev.github.io/raservices/",
   "name": "raservices",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.0.2",
+    "emailjs-com": "^3.2.0",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
     "react-responsive": "^8.2.0",
+    "react-responsive-carousel": "^3.2.20",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "sass": "^1.35.2",
-    "web-vitals": "^1.0.1"
+    "swiper": "^6.8.1",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -42,8 +46,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
