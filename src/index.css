@@ -471,11 +471,16 @@ body {
     margin: 2px;
   }
   .specialitiesLanginImageContainer h1 {
-    bottom: 54%;
+    bottom: 69%;
+    left: 0%;
     font-size: 66px;
+    padding: 5px;
+    background: #ffffff36;
+    border-radius: 5px;
   }
   .specialitiesLanginImageContainer .bottomBorder {
-    bottom: 53%;
+    bottom: 68%;
+    left: 0%;
     width: 60vw;
   }
   .contactinfo {
@@ -504,8 +509,8 @@ body {
   }
 
   .socialMediaIcons {
-    bottom: 70%;
-    left: 0;
+    bottom: 82%;
+    left: 34%;
   }
 
   .socialMediaIcons img {
