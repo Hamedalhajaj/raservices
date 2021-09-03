@@ -11,21 +11,21 @@ const RemodelingScreen = props => {
   const payload = [
     {
       svg: basement,
-      text: 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+      text: 'Let us bring your dream kitchen to life. No matter if you need a few small updates or an entire kitchen makeover, our team at R. A Services LLC can work with you to create a custom design you are sure to love.',
       alt: 'basement',
-      headerText: 'Hello World'
+      headerText: 'Kitchen'
     },
     {
       svg: bathroom,
-      text: 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+      text: 'Looking to update your bathroom? Adding new tile to the floor or walls is a sure fire way to brighten up any bathroom. Swap out your standard sink for a beautiful vanity to add aesthetics and storage. Whatever changes you are looking to make, let R. A Services LLC help you make that vision a reality.',
       alt: 'bathroom',
-      headerText: 'Hello World'
+      headerText: 'Bathroom'
     },
     {
       svg: kitchen,
-      text: 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh',
+      text: 'Game rooms, "Man Caves", additional bedrooms, etc. We  at R.A Services LLC can transform your basement into another great space for you and your friends/family to gather. We have a great deal of experience with waterproofing and foundation work which is essential for any basement remodeling project. ',
       alt: 'kitchen',
-      headerText: 'Hello World'
+      headerText: 'Basement'
     }
   ];
   return (
