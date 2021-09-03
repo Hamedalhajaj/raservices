@@ -14,13 +14,13 @@ const payload = [
     headerText: 'Heating'
   },
   {
-    svg: ventilation,
+    svg: thermometer,
     text: 'Sometimes you need to replace an air conditioning system due to high cost, compromised efficiency, or other reasons. However, reliable AC replacement is anything but a one-size-fits-all situation. R.A Services LLC air conditioning installation team will come to your home to determine precisely which cooling system will work best for you. If you need us to install a new AC system, we’ll work with you to consider your budget and preferences.',
     alt: 'cooling',
     headerText: 'Cooling'
   },
   {
-    svg: thermometer,
+    svg: ventilation,
     text: 'We are the experts in providing fast and efficient solutions to your requirements ventilation. Providing a range of services from the design of a single domestic house to a large hotel, business unit, office or retail building. We have a wealth of experience working with architects and contractors on huge one-off domestic properties with numerous bedrooms/bathrooms, premium bathrooms, and large radiators. To select the correct products for the application, we work closely with numerous manufacturers.',
     alt: 'ventilation',
     headerText: 'Ventilation'
