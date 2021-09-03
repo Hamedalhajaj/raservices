@@ -5,7 +5,6 @@ import QuoteForm from '../components/QuoteForm';
 import { useMediaQuery } from 'react-responsive';
 import Logo from '../assets/work/Logo.svg';
 import LogoDark from '../assets/work/LogoDark.svg';
-import menu from '../assets/work/menu.svg';
 import close from '../assets/work/close.svg';
 import { Button } from 'react-bootstrap';
 
