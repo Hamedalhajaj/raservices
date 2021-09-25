@@ -331,6 +331,11 @@ body {
 
 .introTextContainer h1 {
   font-size: 72px;
+  margin-bottom: 5%;
+}
+
+.introTextContainer h2 {
+  margin-bottom: 1%;
 }
 
 .introTextContainer p {
@@ -520,6 +525,13 @@ body {
   }
 
   .introTextContainer h1 {
-    font-size: 44px !important;
+    font-size: 20px !important;
+    margin-bottom: 15% !important;
   }
+  .introTextContainer h2 {
+    font-size: 15px !important;
+    font-weight: bold;
+    margin-bottom: 5% !important;
+  }
+  
 }

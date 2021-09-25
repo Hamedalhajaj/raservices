@@ -11,21 +11,24 @@ const RemodelingScreen = props => {
   const payload = [
     {
       svg: kitchen,
-      text: 'Let us bring your dream kitchen to life. No matter if you need a few small updates or an entire kitchen makeover, our team at R.A Services LLC can work with you to create a custom design you are sure to love.',
+      text: 'Whether your goal is a multifunctional, family-friendly kitchen or a sleek, contemporary one, our team at R.A Services LLC can work with you to create a custom design you are sure to love. Whether it is a small remodel or building your kitchen from scratch, we will work within your budget to make your vision of your dream kitchen come to life without any hidden costs.',
       alt: 'basement',
-      headerText: 'Kitchen'
+      headerText: 'Kitchen',
+      subHeader: 'Let us bring your dream kitchen to life...'
     },
     {
       svg: bathroom,
-      text: 'Looking to update your bathroom? Adding new tile to the floor or walls is a sure fire way to brighten up any bathroom. Swap out your standard sink for a beautiful vanity to add aesthetics and storage. Whatever changes you are looking to make, let R.A Services LLC help you make that vision a reality.',
+      text: 'Looking to update your bathroom? Adding new tile to the floor or walls is a sure-fire way to brighten up any bathroom. Swap out your standard sink for a beautiful vanity to add aesthetics and storage. Whatever changes you are looking to make, let R.A Services LLC help you make that vision a reality. Reinvent the most utilitarian room in the house and explore dozens of beautiful bathroom remodeling ideas comprising all different materials, colors, and designs.',
       alt: 'bathroom',
-      headerText: 'Bathroom'
+      headerText: 'Bathroom',
+      subHeader: 'Shaping bathrooms into spas...'
     },
     {
       svg: basement,
-      text: 'Game rooms, "Man Caves", additional bedrooms, etc. We  at R.A Services LLC can transform your basement into another great space for you and your friends/family to gather. We have a great deal of experience with waterproofing and foundation work which is essential for any basement remodeling project. ',
+      text: 'Game rooms, "Man Caves", additional bedrooms, large storage areas, etc. Add more value to your place by remodeling your basement and get the most out of it. At R.A Services, our basement remodeling services are performed by professionals with years of experience and the most refined eyes for design to not only meet your expectations but to exceed them. We can transform your basement into another great space for you and your friends/family to gather. We have a great deal of experience with waterproofing and foundation work which is essential for any basement remodeling project. Luckily, you do not need to have the craziest budget to have a luxurious basement. We will work with you to determine the right kind of rebuild for your specific budget without any hidden costs. Unlike bathrooms or kitchens, your basement could become any kind of room you envision.',
       alt: 'kitchen',
-      headerText: 'Basement'
+      headerText: 'Basement',
+      subHeader: 'Add even more value to your place...'
     }
   ];
   return (
