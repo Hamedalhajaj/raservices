@@ -1,48 +1,54 @@
-import React, { useRef } from 'react';
-import { useState } from 'react';
-import Header from '../components/Header';
-import QuoteForm from '../components/QuoteForm';
-import { useMediaQuery } from 'react-responsive';
-import Logo from '../assets/work/Logo.svg';
-import LogoDark from '../assets/work/LogoDark.svg';
-import close from '../assets/work/close.svg';
-import { Button } from 'react-bootstrap';
+import React, { useRef } from "react";
+import { useState } from "react";
+import Header from "../components/Header";
+import QuoteForm from "../components/QuoteForm";
+import { useMediaQuery } from "react-responsive";
+import close from "../assets/work/close.svg";
+import { Button } from "react-bootstrap";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
-const withHeader = Component => {
-  return props => {
+const withHeader = (Component) => {
+  return (props) => {
     const [scrolled, setScrolled] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const headerRef = useRef(null);
     const [showMenu, setShowMenu] = useState(false);
 
     const isDesktopOrLaptop = useMediaQuery({
-      query: '(min-device-width: 1224px)'
+      query: "(min-device-width: 1224px)",
     });
 
-    const handleScroll = event => {
+    const handleScroll = (event) => {
       if (isDesktopOrLaptop) {
         if (event.target.scrollTop >= headerRef.current.scrollHeight) {
-          headerRef.current.className = 'headerAnimation';
-          headerRef.current.children[1].children[0].children[0].style.color = '#525252';
-          headerRef.current.children[1].children[1].style.color = '#525252';
-          headerRef.current.children[1].children[2].style.color = '#525252';
-          headerRef.current.children[1].children[3].style.color = '#525252';
+          headerRef.current.className = "headerAnimation";
+          headerRef.current.children[1].children[0].children[0].style.color =
+            "#525252";
+          headerRef.current.children[1].children[1].style.color = "#525252";
+          headerRef.current.children[1].children[2].style.color = "#525252";
+          headerRef.current.children[1].children[3].style.color = "#525252";
 
-          headerRef.current.children[0].children[0].children[0].className = 'logoAnimation';
+          headerRef.current.children[0].children[0].children[0].className =
+            "logoAnimation";
           setScrolled(true);
         }
-        if (event.target.scrollTop < headerRef.current.scrollHeight && scrolled) {
-          headerRef.current.className = 'headerAnimationReverted';
-          headerRef.current.children[0].children[0].children[0].className = 'logoAnimationReverted';
-          headerRef.current.children[1].children[0].children[0].style.color = '#fbfbfb';
-          headerRef.current.children[1].children[1].style.color = '#fbfbfb';
-          headerRef.current.children[1].children[2].style.color = '#fbfbfb';
-          headerRef.current.children[1].children[3].style.color = '#fbfbfb';
+        if (
+          event.target.scrollTop < headerRef.current.scrollHeight &&
+          scrolled
+        ) {
+          headerRef.current.className = "headerAnimationReverted";
+          headerRef.current.children[0].children[0].children[0].className =
+            "logoAnimationReverted";
+          headerRef.current.children[1].children[0].children[0].style.color =
+            "#fbfbfb";
+          headerRef.current.children[1].children[1].style.color = "#fbfbfb";
+          headerRef.current.children[1].children[2].style.color = "#fbfbfb";
+          headerRef.current.children[1].children[3].style.color = "#fbfbfb";
           setScrolled(false);
         }
       }
     };
-    const handleNoneSpecialityClick = route => {
+    const handleNoneSpecialityClick = (route) => {
       setShowMenu(false);
       props.history.push(route);
     };
@@ -50,42 +56,35 @@ const withHeader = Component => {
     if (showMenu) {
       return (
         <>
-          <div className='mobileMenuContainer'>
-            <div className='mobileLogoContainer'>
-              <div>
-                <img
-                  onClick={() => props.history.push('/')}
-                  className='mobileLogo'
-                  src={LogoDark}
-                  alt={Logo}
-                />
-              </div>
-            </div>
-            <div className='burgerMenu' onClick={() => setShowMenu(!showMenu)}>
+          <div className="mobileMenuContainer">
+            <div className="burgerMenu" onClick={() => setShowMenu(!showMenu)}>
               <img src={close} alt={close} />
             </div>
+            <a href="tel:+1-412-519-5553">
+              <BsFillTelephoneFill color="black" size="35px"/>
+            </a>
           </div>
-          <div className='dropdownMobileContainer'>
-            <div onClick={() => handleNoneSpecialityClick('general')}>
+          <div className="dropdownMobileContainer">
+            <div onClick={() => handleNoneSpecialityClick("general")}>
               <span> General Contracting</span>
             </div>
-            <div onClick={() => handleNoneSpecialityClick('remodel')}>
+            <div onClick={() => handleNoneSpecialityClick("remodel")}>
               <span> Remodeling</span>
             </div>
-            <div onClick={() => handleNoneSpecialityClick('hvac')}>
+            <div onClick={() => handleNoneSpecialityClick("hvac")}>
               <span> HVAC</span>
             </div>
-            <div onClick={() => handleNoneSpecialityClick('portfolio')}>
+            <div onClick={() => handleNoneSpecialityClick("portfolio")}>
               <span> Portfolio</span>
             </div>
-            <div onClick={() => handleNoneSpecialityClick('whoweare')}>
+            <div onClick={() => handleNoneSpecialityClick("whoweare")}>
               <span> Who we are</span>
             </div>
-            <div onClick={() => handleNoneSpecialityClick('contact')}>
+            <div onClick={() => handleNoneSpecialityClick("contact")}>
               <span> Contact</span>
             </div>
             <Button
-              variant='danger'
+              variant="danger"
               onClick={() => {
                 setShowMenu(false);
                 setShowModal(true);
@@ -99,7 +98,7 @@ const withHeader = Component => {
     }
 
     return (
-      <div style={{ height: '100vh' }} onScroll={handleScroll}>
+      <div style={{ height: "100vh" }} onScroll={handleScroll}>
         <Header
           ref={headerRef}
           scrolled={scrolled}

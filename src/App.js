@@ -32,7 +32,7 @@ import RemodelingScreen from './screens/RemodelingScreen';
 import HVACScreen from './screens/HVACScreen';
 import ContactScreen from './screens/ContactScreen';
 import PortfolioScreen from './screens/PortfolioScreen';
-import WhoWeAre from './screens/WhoWeAre';
+import WhoWeAre from './screens/WhoWeAre'
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
