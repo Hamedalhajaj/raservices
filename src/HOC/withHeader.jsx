@@ -57,19 +57,14 @@ const withHeader = (Component) => {
       return (
         <>
           <div className="mobileMenuContainer">
-            <div className="burgerMenu" onClick={() => setShowMenu(!showMenu)}>
+            <div className="closeButton" onClick={() => setShowMenu(!showMenu)}>
               <img src={close} alt={close} />
             </div>
-            <a href="tel:+1-412-519-5553">
+            <a href="tel:+1-412-519-5553" className="phoneIcon">
               <BsFillTelephoneFill
-                 className="icon"
-                 style={{
-                   position: 'absolute',
-                   top: '20px',
-                   right: '20px',
-                 }}
-                   size='45px'
-                   color='black'
+                className="icon"
+                size='35px'
+                color='black'
               />
             </a>
           </div>
