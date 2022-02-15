@@ -372,7 +372,7 @@ body {
 
 .mobileMenuContainer {
   display: flex;
-  padding: 1%;
+  padding-top: 4%;
 }
 
 .mobileLogoContainer {
