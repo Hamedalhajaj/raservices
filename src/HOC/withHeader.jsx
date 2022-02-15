@@ -3,7 +3,7 @@ import {useState} from "react";
 import Header from "../components/Header";
 import QuoteForm from "../components/QuoteForm";
 import {useMediaQuery} from "react-responsive";
-import phone from "../assets/work/phone.jpeg"
+import phone from "../assets/work/phone.svg"
 import close from "../assets/work/close.svg";
 import {Button} from "react-bootstrap";
 

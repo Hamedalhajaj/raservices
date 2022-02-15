@@ -414,10 +414,7 @@ body {
 }
 
 .phone {
-  width: 45px;
-  height: 45px;
-  margin-right: 20px;
-  margin-top: 10px;
+  height: 60px;
 }
 
 .dropdownMobileContainer {
