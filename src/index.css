@@ -375,6 +375,10 @@ body {
   padding: 1%;
 }
 
+.mobileMenuContainer a {
+  padding-top: 3%;
+}
+
 .mobileLogoContainer {
   flex: 1;
 }
@@ -399,6 +403,7 @@ body {
   display: flex;
   flex: 1;
   justify-content: flex-start;
+  padding-top: 3%;
 }
 
 .closeButton img {
@@ -408,9 +413,11 @@ body {
   margin-top: 3%;
 }
 
-.phoneIcon {
-  margin-right: 5%;
-  margin-top: 3%;
+.phone {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .dropdownMobileContainer {
@@ -462,10 +469,12 @@ body {
     animation-name: none;
     animation-duration: unset;
   }
+
   .imageCardContainer div {
     animation-name: none;
     animation-duration: unset;
   }
+
   .imageCardContainer,
   .specialitiesLanginImage {
     flex: 1;
@@ -489,10 +498,12 @@ body {
     height: 14vh;
     flex-wrap: wrap;
   }
+
   .navItemsContainer div,
   .specialitiesMenue {
     margin: 2px;
   }
+
   .specialitiesLanginImageContainer h1 {
     bottom: 71%;
     left: 0%;
@@ -501,15 +512,18 @@ body {
     background: #ffffff36;
     border-radius: 5px;
   }
+
   .specialitiesLanginImageContainer .bottomBorder {
     bottom: 70%;
     left: 0%;
     width: 60vw;
   }
+
   .contactinfo {
     bottom: 0%;
     left: 3%;
   }
+
   .specialitiesLanginImageContainer .arrowDiv img {
     width: 12%;
   }

@@ -1,11 +1,11 @@
-import React, { useRef } from "react";
-import { useState } from "react";
+import React, {useRef} from "react";
+import {useState} from "react";
 import Header from "../components/Header";
 import QuoteForm from "../components/QuoteForm";
-import { useMediaQuery } from "react-responsive";
+import {useMediaQuery} from "react-responsive";
+import phone from "../assets/work/phone.jpeg"
 import close from "../assets/work/close.svg";
-import { Button } from "react-bootstrap";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import {Button} from "react-bootstrap";
 
 const withHeader = (Component) => {
   return (props) => {
@@ -19,8 +19,10 @@ const withHeader = (Component) => {
     });
 
     const handleScroll = (event) => {
-      if (isDesktopOrLaptop) {
-        if (event.target.scrollTop >= headerRef.current.scrollHeight) {
+      if (isDesktopOrLaptop)
+      {
+        if (event.target.scrollTop >= headerRef.current.scrollHeight)
+        {
           headerRef.current.className = "headerAnimation";
           headerRef.current.children[1].children[0].children[0].style.color =
             "#525252";
@@ -35,7 +37,8 @@ const withHeader = (Component) => {
         if (
           event.target.scrollTop < headerRef.current.scrollHeight &&
           scrolled
-        ) {
+        )
+        {
           headerRef.current.className = "headerAnimationReverted";
           headerRef.current.children[0].children[0].children[0].className =
             "logoAnimationReverted";
@@ -53,19 +56,17 @@ const withHeader = (Component) => {
       props.history.push(route);
     };
 
-    if (showMenu) {
+    if (showMenu)
+    {
       return (
         <>
           <div className="mobileMenuContainer">
             <div className="closeButton" onClick={() => setShowMenu(!showMenu)}>
               <img src={close} alt={close} />
             </div>
-            <a href="tel:+1-412-519-5553" className="phoneIcon">
-              <BsFillTelephoneFill
-                className="icon"
-                size='35px'
-                color='black'
-              />
+            <a href="tel:+1-412-616-6791">
+              <img src={phone} alt="phone"
+                className="phone" />
             </a>
           </div>
           <div className="dropdownMobileContainer">
@@ -102,7 +103,7 @@ const withHeader = (Component) => {
     }
 
     return (
-      <div style={{ height: "100vh" }} onScroll={handleScroll}>
+      <div style={{height: "100vh"}} onScroll={handleScroll}>
         <Header
           ref={headerRef}
           scrolled={scrolled}
