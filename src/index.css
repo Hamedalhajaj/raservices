@@ -377,6 +377,7 @@ body {
 
 .mobileMenuContainer a {
   padding-top: 3%;
+  margin-right: 3%;
 }
 
 .mobileLogoContainer {
@@ -402,15 +403,14 @@ body {
 .closeButton {
   display: flex;
   flex: 1;
-  justify-content: flex-start;
   padding-top: 3%;
+  margin-left: 3%;
+  align-items: center;
 }
 
 .closeButton img {
   width: 35px;
   height: 35px;
-  margin-left: 5%;
-  margin-top: 3%;
 }
 
 .phone {
