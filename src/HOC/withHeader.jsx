@@ -64,7 +64,7 @@ const withHeader = (Component) => {
             <div className="closeButton" onClick={() => setShowMenu(!showMenu)}>
               <img src={close} alt={close} />
             </div>
-            <a href="tel:+1-412-616-6791">
+            <a href="tel:+1-412-519-5553">
               <img src={phone} alt="phone"
                 className="phone" />
             </a>
