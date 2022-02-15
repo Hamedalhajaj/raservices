@@ -1,5 +1,5 @@
-import React from 'react';
-import downarrow from '../assets/work/downarrow.svg';
+import React from "react";
+import downarrow from "../assets/work/downarrow.svg";
 
 const SpecialitiesLandingImage = props => {
   const { src, name, description, arrow } = props;

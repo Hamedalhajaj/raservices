@@ -1,0 +1,35 @@
+{
+  "extends": ["plugin:promise/recommended", "plugin:react/recommended"],
+  "plugins": ["react", "promise", "unused-imports"],
+   "overrides": [
+    {
+      "files": ["*.jsx"]
+      
+    }
+  ],
+  "rules": {
+   "quotes": [
+     "warn",
+     "double"
+   ],
+   "react/display-name": "off",
+    "react/jsx-uses-react": "warn",   
+    "react/jsx-uses-vars": "warn",
+    "react/prop-types": 0,
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "warn",
+    "promise/always-return": "off",
+    "promise/no-return-wrap": "error",
+    "promise/param-names": "error",
+    "promise/catch-or-return": "warn",
+    "promise/no-native": "off",
+    "promise/no-nesting": "warn",
+    "promise/no-promise-in-callback": "warn",
+    "promise/no-callback-in-promise": "warn",
+    "promise/avoid-new": "warn",
+    "promise/no-new-statics": "error",
+    "promise/no-return-in-finally": "warn",
+    "promise/valid-params": "warn"
+  },
+  "parser": "babel-eslint"
+}

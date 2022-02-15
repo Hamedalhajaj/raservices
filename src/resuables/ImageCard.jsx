@@ -1,15 +1,15 @@
-import React from 'react';
-import { useRef } from 'react';
+import React from "react";
+import { useRef } from "react";
 
 const ImageCard = props => {
   const discoverMore = useRef(null);
 
   const { src, name, description } = props;
   const handleMouseOver = () => {
-    discoverMore.current.style.display = 'block';
+    discoverMore.current.style.display = "block";
   };
   const handleMouseOut = () => {
-    discoverMore.current.style.display = 'none';
+    discoverMore.current.style.display = "none";
   };
 
   const handleDiscoverMoreClick = () => {

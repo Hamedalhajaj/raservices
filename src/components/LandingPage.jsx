@@ -1,18 +1,18 @@
-import React, { useRef } from 'react';
-import { useMediaQuery } from 'react-responsive';
-import remodeling from '../assets/work/remodeling.jpg';
-import hvac from '../assets/work/hvac.jpg';
-import general from '../assets/work/general.jpg';
-import withHeader from '../HOC/withHeader';
-import ImageCard from '../resuables/ImageCard';
+import React, { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
+import remodeling from "../assets/work/remodeling.jpg";
+import hvac from "../assets/work/hvac.jpg";
+import general from "../assets/work/general.jpg";
+import withHeader from "../HOC/withHeader";
+import ImageCard from "../resuables/ImageCard";
 const AppStateContext = React.createContext();
-AppStateContext.displayName = 'AppStateContext';
+AppStateContext.displayName = "AppStateContext";
 
 const LandingPage = props => {
   const fourImagesContainerRef = useRef(null);
 
   const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-device-width: 1224px)'
+    query: "(min-device-width: 1224px)"
   });
 
   //   Desktop

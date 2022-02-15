@@ -1,22 +1,22 @@
-import React from 'react';
-import withHeader from '../HOC/withHeader';
-import SpecialitiesLandingImage from '../resuables/SpecialitiesLandingImage';
-import contact from '../assets/work/contact.jpg';
-import facebook from '../assets/work/facebook.svg';
-import instagram from '../assets/work/instagram.svg';
-import linkedin from '../assets/work/linkedin.svg';
+import React from "react";
+import withHeader from "../HOC/withHeader";
+import SpecialitiesLandingImage from "../resuables/SpecialitiesLandingImage";
+import contact from "../assets/work/contact.jpg";
+import facebook from "../assets/work/facebook.svg";
+import instagram from "../assets/work/instagram.svg";
+import linkedin from "../assets/work/linkedin.svg";
 
 const ContactScreen = props => {
   const handleSocialClick = social => {
     switch (social) {
-      case 'facebook':
-        window.open('https://www.facebook.com/RA-Services-LLC-106606648330868/');
+      case "facebook":
+        window.open("https://www.facebook.com/RA-Services-LLC-106606648330868/");
         break;
-      case 'instagram':
-        window.open('https://www.instagram.com/r.aservicesllc/');
+      case "instagram":
+        window.open("https://www.instagram.com/r.aservicesllc/");
         break;
-      case 'linkedin':
-        window.open('https://www.linkedin.com/company/r-a-services-llc/');
+      case "linkedin":
+        window.open("https://www.linkedin.com/company/r-a-services-llc/");
         break;
       default:
         return;
@@ -31,21 +31,21 @@ const ContactScreen = props => {
           src={facebook}
           alt={facebook}
           onClick={() => {
-            handleSocialClick('facebook');
+            handleSocialClick("facebook");
           }}
         />
         <img
           src={instagram}
           alt={instagram}
           onClick={() => {
-            handleSocialClick('instagram');
+            handleSocialClick("instagram");
           }}
         />
         <img
           src={linkedin}
           alt={linkedin}
           onClick={() => {
-            handleSocialClick('linkedin');
+            handleSocialClick("linkedin");
           }}
         />
       </div>

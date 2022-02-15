@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const IntroSection = props => {
   const { payload } = props;
@@ -10,7 +10,7 @@ const IntroSection = props => {
           <div className='introTextContainer'>
             <h1 style={{ fontSize: 72 }}>{headerText}</h1>
             <h2>{subHeader}</h2>
-            <p style={{ wordBreak: 'break-all' }}>{text}</p>
+            <p style={{ wordBreak: "break-all" }}>{text}</p>
           </div>
         </div>
       ))}
