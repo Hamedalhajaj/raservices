@@ -57,7 +57,7 @@ const ContactScreen = props => {
         <p>Pittsburgh, PA, 15227, USA</p>
         <h3>Phone:</h3>
         <p>+1 (412) 519-5553</p>
-        <p>+1 (412) 656-0508</p>
+        <p>+1 (412) 616-6791</p>
         <h3>Email:</h3>
         <p>contact@raservicellc.com</p>
       </div>
