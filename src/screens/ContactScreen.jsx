@@ -25,7 +25,7 @@ const ContactScreen = props => {
 
   return (
     <>
-      <SpecialitiesLandingImage src={contact} name='Contact Us' description='Contact Us' />
+      <SpecialitiesLandingImage src={contact} name='Contact Us' description='Contact Us' titleStyles = {{color: "white"}} />
       <div className='socialMediaIcons'>
         <img
           src={facebook}
