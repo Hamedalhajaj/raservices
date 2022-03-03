@@ -76,14 +76,14 @@ const withHeader = (Component) => {
             <div onClick={() => handleNoneSpecialityClick("remodel")}>
               <span> Remodeling</span>
             </div>
-            <div onClick={() => handleNoneSpecialityClick("hvac")}>
+            {/* <div onClick={() => handleNoneSpecialityClick("hvac")}>
               <span> HVAC</span>
-            </div>
+            </div> */}
             <div onClick={() => handleNoneSpecialityClick("portfolio")}>
-              <span> Portfolio</span>
+              <span> Our Work</span>
             </div>
             <div onClick={() => handleNoneSpecialityClick("whoweare")}>
-              <span> Who we are</span>
+              <span> About Us</span>
             </div>
             <div onClick={() => handleNoneSpecialityClick("contact")}>
               <span> Contact</span>
