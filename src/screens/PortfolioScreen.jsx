@@ -13,11 +13,11 @@ import eight from "../assets/portfolio/8.jpg";
 const PortfolioScreen = props => {
   const images = [
     { src: one, alt: "basement" },
-    { src: two, alt: "basement" },
+    { src: two, alt: "basement2" },
     { src: three, alt: "bathroom" },
-    { src: four, alt: "bathroom" },
-    { src: five, alt: "bathroom" },
-    { src: six, alt: "bathroom" },
+    { src: four, alt: "bathroom2" },
+    { src: five, alt: "bathroom3" },
+    { src: six, alt: "bathroom4" },
     { src: seven, alt: "attic" },
     { src: eight, alt: "roof" }
   ];
