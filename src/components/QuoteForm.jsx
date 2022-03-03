@@ -7,7 +7,8 @@ import emailjs from "emailjs-com";
 
 
 const schema = yup.object().shape({
-  name: yup.string().required().label("name"),
+  firstName: yup.string().required().label("firstName"),
+  lastName: yup.string().required().label("lastName"),
   email: yup.string().required().email(),
   phone: yup.number().required(),
   zip: yup.number().required(),
@@ -99,11 +100,21 @@ const QuoteForm = props => {
               <Form.Group className='mb-3' controlId='validationFormik101'>
                 <Form.Control
                   type='text'
-                  name='name'
-                  placeholder='Name*'
+                  name='firstName'
+                  placeholder='First Name*'
                   onChange={handleChange}
-                  value={values.name}
-                  isInvalid={!!errors.name}
+                  value={values.firstName}
+                  isInvalid={!!errors.firstName}
+                />
+              </Form.Group>
+              <Form.Group className='mb-3'>
+                <Form.Control
+                  type='lastName'
+                  placeholder='Last Name*'
+                  name='lastName'
+                  onChange={handleChange}
+                  value={values.lastName}
+                  isInvalid={!!errors.lastName}
                 />
               </Form.Group>
               <Form.Group className='mb-3'>
