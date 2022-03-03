@@ -158,11 +158,11 @@ body {
 }
 
 .imageCard {
-  width: 33.33333vw;
+  width: 50vw;
   height: 100%;
 }
 
-.imageCard:hover {
+/* .imageCard:hover {
   width: 40vw;
   animation-name: anime;
   animation-duration: 1s;
@@ -179,7 +179,7 @@ body {
   to {
     width: 40vw;
   }
-}
+} */
 @keyframes out {
   from {
     width: 40vw;
