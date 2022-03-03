@@ -54,7 +54,7 @@ const Header = React.forwardRef((props, ref) => {
         <nav className="navItemsContainer">
           <div>
             <div className="specialitiesMenue" onClick={handleSpecialityClick}>
-              Specialities &#9660;
+              Services &#9660;
             </div>
             <ul ref={ulRef}>
               <li onClick={() => handleCategoryClick("general")}>
@@ -65,10 +65,10 @@ const Header = React.forwardRef((props, ref) => {
             </ul>
           </div>
           <div onClick={() => handleNoneSpecialityClick("portfolio")}>
-            Portfolio
+            Our Work
           </div>
           <div onClick={() => handleNoneSpecialityClick("whoweare")}>
-            Who we are
+            About Us
           </div>
           <div onClick={() => handleNoneSpecialityClick("contact")}>
             Contact
